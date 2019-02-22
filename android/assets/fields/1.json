@@ -1,0 +1,97 @@
+{
+  "renderables": {
+    "children": [
+      {
+        "class": "com.bombing.render.RenderableComposite",
+        "children": [
+          {
+            "class": "com.bombing.render.RenderableComposite",
+            "children": [
+              {
+                "class": "com.bombing.gameobjs.Box",
+                "rangeCoords": {
+                  "x": 1,
+                  "y": 1,
+                  "z": 3
+                }
+              },{
+                "class": "com.bombing.gameobjs.Box",
+                "rangeCoords": {
+                  "x": 1,
+                  "y": 2,
+                  "z": 3
+                }
+              },
+              {
+                "class": "com.bombing.gameobjs.Box",
+                "rangeCoords": {
+                  "x": -1,
+                  "y": 1
+                }
+              },
+              {
+                "class": "com.bombing.gameobjs.Box",
+                "rangeCoords": {
+                  "x": -1,
+                  "y": 2
+                }
+              }
+            ],
+            "groupName": "boxes"
+          },
+          {
+            "class": "com.bombing.render.RenderableComposite",
+            "children": [
+              {
+                "class": "com.bombing.gameobjs.Target",
+                "rangeCoords": {
+                  "x": 1,
+                  "y": 3,
+                  "z": 3
+                }
+              },
+              {
+                "class": "com.bombing.gameobjs.Target",
+                "rangeCoords": {
+                  "x": -1,
+                  "y": 3
+                }
+              }
+            ],
+            "groupName": "targets"
+          }
+        ],
+        "groupName": "range"
+      },
+      {
+        "class": "com.bombing.render.RenderableComposite",
+        "children": [
+          {
+            "class": "com.bombing.render.RenderableComposite",
+            "children": [
+              {
+                "class": "com.bombing.gameobjs.Cannonball"
+              },
+              {
+                "class": "com.bombing.gameobjs.Cannonball"
+              },
+              {
+                "class": "com.bombing.gameobjs.Cannonball"
+              }
+            ],
+            "groupName": "cannonballs"
+          },
+          {
+            "class": "com.bombing.gameobjs.Ground"
+          }
+        ],
+        "groupName": "notRange"
+      }
+    ],
+    "groupName": "renderables"
+  },
+  "coordsConverter": {
+    "class": "com.bombing.field.StandardCoordsConverter"
+  },
+  "name": "First"
+}
